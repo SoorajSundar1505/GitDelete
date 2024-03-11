@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-03-11T13:56:01 IST" name="Default suite" finished-at="2024-03-11T13:56:06 IST" duration-ms="5543">
+    <groups>
+    </groups>
+    <test started-at="2024-03-11T13:56:01 IST" name="Default test" finished-at="2024-03-11T13:56:06 IST" duration-ms="5543">
+      <class name="Tests.LoginTests">
+        <test-method is-config="true" signature="Setup()[pri:0, instance:Tests.LoginTests@57db2b13]" started-at="2024-03-11T13:55:52 IST" name="Setup" finished-at="2024-03-11T13:56:01 IST" duration-ms="9062" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="LoginToOrangeHRMInValid()[pri:0, instance:Tests.LoginTests@57db2b13]" started-at="2024-03-11T13:56:01 IST" name="LoginToOrangeHRMInValid" finished-at="2024-03-11T13:56:04 IST" duration-ms="3454" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:1067)
+at org.testng.Assert.assertEquals(Assert.java:1031)
+at org.testng.Assert.assertEquals(Assert.java:1077)
+at Tests.LoginTests.LoginToOrangeHRMInValid(LoginTests.java:58)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginToOrangeHRMInValid -->
+        <test-method is-config="true" signature="sc(org.testng.ITestResult)[pri:0, instance:Tests.LoginTests@57db2b13]" started-at="2024-03-11T13:56:05 IST" name="sc" finished-at="2024-03-11T13:56:05 IST" duration-ms="137" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=LoginToOrangeHRMInValid status=FAILURE method=LoginTests.LoginToOrangeHRMInValid()[pri:0, instance:Tests.LoginTests@57db2b13] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sc -->
+        <test-method signature="LoginToOrangeHRMValid()[pri:0, instance:Tests.LoginTests@57db2b13]" started-at="2024-03-11T13:56:05 IST" name="LoginToOrangeHRMValid" finished-at="2024-03-11T13:56:06 IST" duration-ms="1668" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginToOrangeHRMValid -->
+        <test-method is-config="true" signature="sc(org.testng.ITestResult)[pri:0, instance:Tests.LoginTests@57db2b13]" started-at="2024-03-11T13:56:06 IST" name="sc" finished-at="2024-03-11T13:56:06 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=LoginToOrangeHRMValid status=SUCCESS method=LoginTests.LoginToOrangeHRMValid()[pri:0, instance:Tests.LoginTests@57db2b13] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sc -->
+        <test-method is-config="true" signature="Teardown()[pri:0, instance:Tests.LoginTests@57db2b13]" started-at="2024-03-11T13:56:07 IST" name="Teardown" finished-at="2024-03-11T13:56:08 IST" duration-ms="1175" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Teardown -->
+      </class> <!-- Tests.LoginTests -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

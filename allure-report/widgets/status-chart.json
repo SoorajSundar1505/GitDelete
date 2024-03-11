@@ -1,1 +1,0 @@
-[{"uid":"3521403ce192bf65","name":"LoginToOrangeHRMValid","time":{"start":1710145565248,"stop":1710145566912,"duration":1664},"status":"passed","severity":"critical"},{"uid":"4eb0bedb83e2538c","name":"LoginToOrangeHRMInValid","time":{"start":1710145561569,"stop":1710145564923,"duration":3354},"status":"failed","severity":"minor"}]

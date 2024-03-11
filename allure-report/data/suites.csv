@@ -1,3 +1,0 @@
-"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Mon Mar 11 13:56:05 IST 2024","Mon Mar 11 13:56:06 IST 2024","1664","Default suite","Default test","Tests.LoginTests","Tests.LoginTests","LoginToOrangeHRMValid","LoginToOrangeHRMValid","Login to OrangeHRM"
-"failed","Mon Mar 11 13:56:01 IST 2024","Mon Mar 11 13:56:04 IST 2024","3354","Default suite","Default test","Tests.LoginTests","Tests.LoginTests","LoginToOrangeHRMInValid","LoginToOrangeHRMInValid","Login to OrangeHRM"

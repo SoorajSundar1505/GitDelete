@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.time.Duration;
 
 import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -13,6 +14,7 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 import static org.testng.Assert.assertEquals;
 
@@ -34,6 +36,7 @@ import io.qameta.allure.Story;
 @Feature("Login to Orange HRM application")
 public class LoginTests extends InitDriver {
 	LoginPage login;
+	SoftAssert softassert = new SoftAssert();
 	@BeforeSuite
 	public void Setup() {
 		SetUp_Browser_Driver();
@@ -55,8 +58,10 @@ public class LoginTests extends InitDriver {
 	@Story("Login page functionality")
 	public void LoginToOrangeHRMInValid() throws IOException {
 		login.logintoApp("invalidUsername", "invalidPassword");
-		assertEquals(false, true);
+		String expected = driver.findElement(By.xpath("//p[text()='Invalid credentials']")).getText();
+		softassert.assertEquals("Invalid", expected);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
+		softassert.assertAll();
 //		takeScreenshot();
 		}
 

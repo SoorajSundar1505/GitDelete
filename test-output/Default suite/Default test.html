@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Mar 11 13:56:01 IST 2024</td>
+<td>Started on:</td><td>Mon Mar 11 14:23:40 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>5 seconds (5543 ms)</td>
+<tr><td>Total time:</td><td>4 seconds (4095 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -77,15 +77,11 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='Tests.LoginTests.LoginToOrangeHRMInValid()'><b>LoginToOrangeHRMInValid</b><br>Test class: Tests.LoginTests</td>
-<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:1067)
-	at org.testng.Assert.assertEquals(Assert.java:1031)
-	at org.testng.Assert.assertEquals(Assert.java:1077)
-	at Tests.LoginTests.LoginToOrangeHRMInValid(LoginTests.java:58)
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [Invalid credentials] but found [Invalid]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at Tests.LoginTests.LoginToOrangeHRMInValid(LoginTests.java:64)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -112,16 +108,12 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace843149630", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace843149630'><pre>java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:1067)
-	at org.testng.Assert.assertEquals(Assert.java:1031)
-	at org.testng.Assert.assertEquals(Assert.java:1077)
-	at Tests.LoginTests.LoginToOrangeHRMInValid(LoginTests.java:58)
+</pre></div><a href='#' onClick='toggleBox("stack-trace329481770", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace329481770'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [Invalid credentials] but found [Invalid]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at Tests.LoginTests.LoginToOrangeHRMInValid(LoginTests.java:64)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -150,20 +142,6 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>3</td>
-<td>Tests.LoginTests@57db2b13</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='Tests.LoginTests.LoginToOrangeHRMValid()'><b>LoginToOrangeHRMValid</b><br>Test class: Tests.LoginTests</td>
-<td></td>
-<td>1</td>
 <td>Tests.LoginTests@57db2b13</td></tr>
 </table><p>
 </body>
